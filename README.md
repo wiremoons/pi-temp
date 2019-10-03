@@ -1,6 +1,5 @@
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
 
-
 # rpi-temp
 Small utility to display the CPU temperature of a Raspberry Pi 4B that is written in C.
 
@@ -10,17 +9,16 @@ that can be installed with the following command:
 ```
 sudo apt -y install build-essential git
 ``` 
-The program source code is in a single file: `rpi-temp.c`. An easy way to download the latest version is to clone this repo from GitHub to your local computer with the command:
 
+The program source code is in a single file: `rpi-temp.c`. An easy way to download the latest version is to clone this repo from GitHub to your local computer with the command:
 ```
 git clone https://github.com/wiremoons/rpi-temp.git
 ```
 
 Compiled on Raspbian 'Buster' on Raspberry Pi 4B with command:
-
 ```
 cc -Wall -O3 -pedantic -march=native -mcpu=native -mtune=native rpi-temp.c -o rpi-temp
-``
+```
 
 ## Installation
 Once compiled, copy the `rpi-temp` binary file somewhere in your path.
@@ -64,5 +62,4 @@ All is well
 The program is licensed with the MIT License.
 
 - http://opensource.org/licenses/mit
-
 
