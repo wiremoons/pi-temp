@@ -3,6 +3,10 @@
 # rpi-temp
 Small utility to display the CPU temperature of a Raspberry Pi 4B that is written in C.
 
+The inspiration and some source code ideas for the program were obtained from:
+- https://github.com/AndrewFromMelbourne/raspi_serialnumber
+- https://www.raspberrypi.org/forums/viewtopic.php?f=33&t=251766
+
 ## Compile
 The program is written in C and uses the normal Linux Raspbian 'Buster' development libraries
 that can be installed with the following command:
