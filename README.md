@@ -67,5 +67,5 @@ All is well
 
 The program is licensed with the MIT License.
 
-- http://opensource.org/licenses/mit
+- [MIT License for rpi-temp](https://github.com/wiremoons/rpi-temp/blob/master/LICENSE)
 
