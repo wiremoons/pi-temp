@@ -24,8 +24,10 @@
  *  Written by Simon Rowe <simon@wiremoons.com> on 03 Oct 2019
  *  Source code available from GitHub: https://github.com/wiremoons/rpi-temp.git
  *
- *  Based on code for similar Raspberry Pi utilities found on the internet here:
+ *  Based on firmware documents and code for similar Raspberry Pi utilities
+ *  found on the internet here:
  *
+ *   - https://github.com/raspberrypi/firmware/wiki
  *   - https://github.com/AndrewFromMelbourne/raspi_serialnumber
  *   - https://www.raspberrypi.org/forums/viewtopic.php?f=33&t=251766
  *
@@ -47,7 +49,7 @@
 #include <time.h>
 #include <unistd.h>
 
-char appversion[] = "1.0.0"; /* set the version of the app here */
+char appversion[] = "1.0.1"; /* set the version of the app here */
 int showFahrenheit = 0;      /* output switch for Fahrenheit temperature */
 
 void show_help(char *prog_name); /* function to display help for app usage */
