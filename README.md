@@ -4,6 +4,7 @@
 Small utility to display the CPU temperature of a Raspberry Pi 4B that is written in C.
 
 The inspiration and some source code ideas for the program were obtained from:
+- https://github.com/raspberrypi/firmware/wiki
 - https://github.com/AndrewFromMelbourne/raspi_serialnumber
 - https://www.raspberrypi.org/forums/viewtopic.php?f=33&t=251766
 
@@ -23,13 +24,14 @@ Compiled on Raspbian 'Buster' on Raspberry Pi 4B with command:
 ```
 cc -Wall -O3 -pedantic -march=native -mcpu=native -mtune=native rpi-temp.c -o rpi-temp
 ```
+or alternatively there is a Makefile provided, so running `make` will compile the program for you using the same command as shown above.
 
 ## Installation
 Once compiled, copy the `rpi-temp` binary file somewhere in your path.
 
 ## Run Time Options
 
-When run without any option `rpi-temp` displays the current CPU temperature in degrees Celcuis. Exmaple default output is:
+When run without any option `rpi-temp` displays the current CPU temperature in degrees Celsius. Example default output is:
 ```
 user@pi4:~$ rpi-temp 
 'pi4' Linux rel 4.19.75-v8+ (aarch64) @ Thu Oct  3 22:55:28 2019
@@ -43,11 +45,11 @@ user@pi4:~$ rpi-temp -f
 CPU => 107.60 °F
 ```
 
-The options available can be displayed with the command: `rpi-temp -h`. Example out is belowL
+The options available can be displayed with the command: `rpi-temp -h`. Example out is below:
 ```
 user@pi4:~$ rpi-temp -h
 
-rpi-temp version: 1.0.0
+rpi-temp version: 1.0.1
 
 Usage: rpi-temp [OPTIONS]
 
