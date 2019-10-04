@@ -79,6 +79,10 @@ int main(int argc, char **argv)
                 exit(EXIT_FAILURE);
         }
 
+        /* request current temperature via mailbox (0x00030006). See RPI docs
+        here:
+        https://github.com/raspberrypi/firmware/wiki/Mailbox-property-interface
+        */
         uint32_t mb_property[10] = {
             0x00000000, 0x00000000, 0x00030006, 0x00000008, 0x00000004,
             0x00000000, 0x00000000, 0x00000000, 0x00000000, 0x00000000};
